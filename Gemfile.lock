@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    SSD1306 (0.6.1)
+      i2c (>= 0.4.0)
+      rmagick (~> 2.14)
+    eventmachine (1.0.9)
+    ffi (1.9.18)
+    i2c (0.4.0)
+    pi_piper (2.0.0)
+      eventmachine (= 1.0.9)
+      ffi
+    rmagick (2.16.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  SSD1306
+  pi_piper
+  rmagick
