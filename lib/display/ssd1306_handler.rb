@@ -22,7 +22,6 @@ class SSD1306Handler
 
   def display(string)
     clear
-    @disp.clear
     @disp.println string
     @disp.display!
   end
@@ -34,6 +33,11 @@ class SSD1306Handler
 
   def clear
     @disp.clear
+  end
+
+  # TODO - Make these forwardable
+  def clear!
+    @disp.clear!
   end
 
 end

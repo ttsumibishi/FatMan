@@ -7,6 +7,7 @@ GEM
     eventmachine (1.0.9)
     ffi (1.9.18)
     i2c (0.4.0)
+    log4r (1.1.10)
     pi_piper (2.0.0)
       eventmachine (= 1.0.9)
       ffi
@@ -17,5 +18,9 @@ PLATFORMS
 
 DEPENDENCIES
   SSD1306
+  log4r
   pi_piper
   rmagick
+
+BUNDLED WITH
+   1.14.6

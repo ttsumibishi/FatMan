@@ -1,84 +1,93 @@
 config:
   pins:
     led:
-      power: 12
-      ap: 16
-      data: 20
-    buttons:
-      admin:
+      power: 17
+      ap: 27
+      data: 22
+    encoder:
       mode:
-        default:
-          enabled: 1
-          name: 'All Black'
-          pin: 9
-          val: ' '
-        solid:
-          enabled: 1
-          name: 'Solid'
-          pin: 17
-          val: '0'
-          sliders:
-            s1: 'Brightness'
-        fade_var:
-          enabled: 1
-          name: 'Fade Variable'
-          pin: 27
-          val: '1'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Speed'
-        fade_fix:
-          enabled: 0
-          name: 'Fade Fixed'
-          pin: 22
-          val: '2'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Speed'
-        single_pulse:
-          enabled: 0
-          name: 'Single Pulse'
-          pin: 5
-          val: '7'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Attack'
-            s3: 'Decay'
-        blink_steady:
-          enabled: 0
-          name: 'Blink Steady'
-          pin: 6
-          val: '3'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Speed'
-            s3: 'Duty'
-        blink_random:
-          enabled: 0
-          name: 'Blink Random'
-          pin: 13
-          val: '5'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Speed'
-            s3: 'Duty'
-        pulse_steady:
-          enabled: 0
-          name: 'Pulse Steady'
-          pin: 19
-          val: '4'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Speed'
-            s3: 'Range'
-        pulse_random:
-          enabled: 0
-          name: 'Pulse Random'
-          pin: 26
-          val: '6'
-          sliders:
-            s1: 'Brightness'
-            s2: 'Speed'
-            s3: 'Range'
-    pots:
+        clk: 10
+        dt: 9
+      a:
+        clk: 6
+        dt: 5
+      b:
+        clk: 13
+        dt: 19
+      c:
+        clk: 21
+        dt: 20
+    buttons:
+      select: 24
+      send_now: 23
+      all_off: 25
+      continuous: 16
+      on_send: 12
+  modes:
+    default:
+      enabled: 1
+      name: 'All Black'
+      val: ' '
+      sliders:
+        s1:
+    solid:
+      enabled: 1
+      name: 'Solid'
+      val: '0'
+      sliders:
+        s1: 'Brightness'
+    fade_var:
+      enabled: 1
+      name: 'Fade Variable'
+      val: '1'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Speed'
+    fade_fix:
+      enabled: 1
+      name: 'Fade Fixed'
+      val: '2'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Speed'
+    single_pulse:
+      enabled: 0
+      name: 'Single Pulse'
+      val: '7'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Attack'
+        s3: 'Decay'
+    blink_steady:
+      enabled: 1
+      name: 'Blink Steady'
+      val: '3'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Speed'
+        s3: 'Duty'
+    blink_random:
+      enabled: 1
+      name: 'Blink Random'
+      val: '5'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Speed'
+        s3: 'Duty'
+    pulse_steady:
+      enabled: 1
+      name: 'Pulse Steady'
+      val: '4'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Speed'
+        s3: 'Range'
+    pulse_random:
+      enabled: 1
+      name: 'Pulse Random'
+      val: '6'
+      sliders:
+        s1: 'Brightness'
+        s2: 'Speed'
+        s3: 'Range'
 
